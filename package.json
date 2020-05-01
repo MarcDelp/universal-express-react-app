@@ -1,0 +1,27 @@
+{
+  "name": "universal-express-react-app",
+  "version": "0.0.1",
+  "description": "A small demo on building a universal express & react app in 2020",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcDelp/universal-express-react-app.git"
+  },
+  "keywords": [
+    "express",
+    "react",
+    "redux",
+    "redux-saga",
+    "universal"
+  ],
+  "author": "Marc Delpech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarcDelp/universal-express-react-app/issues"
+  },
+  "homepage": "https://github.com/MarcDelp/universal-express-react-app#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0"
+  }
+}

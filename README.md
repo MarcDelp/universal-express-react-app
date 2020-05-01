@@ -1,5 +1,28 @@
 # universal-express-react-app
 
+## 01/react-app
+Hi! So you're looking at the differents stages I made to build the whole application? Great.
+In this branch, I set up the client with a small React base. I also set up webpack so that we can build the client and run it.
+
+To test the code of this branch, make sure you have installed all the dependencies and then run:
+```
+npm run build:client
+npx http-server dist/client
+```
+
+For windows users, sorry, the script won't work as is. Just change it to remove the `rm -rf dist` part and it should work just fine.
+
+What have I done in this part?
+- First, I created 3 components for my React app (in `src/client/components`)
+- I also created a simple `index.html` file with basic information to be able to render my React app + I added a favicon
+- I defined a few routes to serve my components
+- I added a script to render my React app
+And that's all for my React base app!
+
+Now that's fine, but this could not work without webpack to bundle the files. So, I also create a webpack configuration file, to handle the client build.
+
+What follows in this README is the same as in the master branch.
+
 ## Introduction
 This is a small example of an universal JS app using Express and React in 2020. As such, the app will also run over HTTP2 protocol.
 

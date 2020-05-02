@@ -1,5 +1,23 @@
 # universal-express-react-app
 
+## 03/statuses
+For now, we have a very tiny universal application. That's great! But look, try to go to some junk url directly in your browser. What's happening? Even if you get to see the 404 page, if you have a look to your network requests you'll see that the server answer is 200. In this branch, I add the status handling for the server.
+
+To test the code on this branch, make sure you have installed all the dependencies and run :
+```
+npm run dev
+```
+
+Same as before, sorry for Windows users, the script won't run as is. Remove the rm -rf dist.
+
+What's new exactly in this branch?
+
+- I changed a little bit the `routes.js` and the `renderer.js` files to handle the statuses
+- I added nodemon to automatically rebuild and restart the app on file changes
+
+What follows in this README is the same as in the master branch.
+
+
 ## Introduction
 This is a small example of an universal JS app using Express and React in 2020. As such, the app will also run over HTTP2 protocol.
 

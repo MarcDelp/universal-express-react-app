@@ -1,5 +1,24 @@
 # universal-express-react-app
 
+## 02/server
+Now that we have the front-end part ready, we'd like to add a server to serve it.
+That's what I've done in this branch. I created a file to run the server and configured it to enable server-side rendering. I also added a new webpack configuration and refactorized the one for the client.
+
+To test the code on this branch, make sure you have installed all the dependencies and run :
+```
+npm run dev
+```
+
+Same as before, sorry for Windows users, the script won't run as is. Remove the `rm -rf dist`.
+
+What's new exactly in this branch?
+
+- I created 2 files for the server (in `src/server`)
+- I changed the `index.html` file and transformed it into `index.ejs` to use it as a template for SSR (I also moved it so it no longer in the client folder)
+- I defined a webpack configuration to bundle my server, as it uses some JSX syntax when doing SSR
+
+What follows in this README is the same as in the master branch.
+
 ## Introduction
 This is a small example of an universal JS app using Express and React in 2020. As such, the app will also run over HTTP2 protocol.
 

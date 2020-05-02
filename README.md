@@ -20,7 +20,7 @@ What have I done in this part?
 
 And that's all for my React base app!
 
-Now that's fine, but this could not work without webpack to bundle the files. So, I also create a webpack configuration file, to handle the client build.
+Now that's fine, but this could not work without webpack to bundle the files. So, I also created a webpack configuration file, to handle the client build.
 
 What follows in this README is the same as in the master branch.
 

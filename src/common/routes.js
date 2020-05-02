@@ -21,7 +21,13 @@ const routes = (
 
     <Route
       path="*"
-      component={NotFoundPage}
+      render={(props) => {
+        if (props.staticContext) { // staticContext does not exists in the client
+          props.staticContext.status = 404;
+        }
+
+        return <NotFoundPage/>;
+      }}
     />
   </Switch>
 );

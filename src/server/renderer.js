@@ -21,6 +21,9 @@ router.get('*', async (req, res) => {
       </StaticRouter>
     );
 
+    // In case our static context receives a status send the response with this status
+    if (context.status) res.status(context.status);
+
     // Render the view and fill the template with corresponding info
     return res.render('index', {
       htmlContent

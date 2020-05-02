@@ -17,5 +17,5 @@ module.exports = Object.assign({}, webpackBaseConfig, {
 
   target: 'node', // the environment in which the server will run
 
-  externals: [nodeExternals()] // to avoid bundling node_modules,
+  externals: [nodeExternals()] // to avoid bundling node_modules
 });

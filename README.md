@@ -14,7 +14,7 @@ Same as before, sorry for Windows users, the script won't run as is. Remove the 
 What's new exactly in this branch?
 
 - I created 2 files for the server (in `src/server`)
-- I changed the `index.html` file and transformed it into `index.ejs` to use it as a template for SSR (I also moved it so it no longer in the client folder)
+- I changed the `index.html` file and transformed it into `index.ejs` to use it as a template for SSR (I also moved it so it no longer is in the client folder)
 - I defined a webpack configuration to bundle my server, as it uses some JSX syntax when doing SSR
 
 What follows in this README is the same as in the master branch.

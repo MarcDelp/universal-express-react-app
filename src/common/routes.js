@@ -6,6 +6,10 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../client/components/Home';
 import NotFoundPage from '../client/components/NotFoundPage';
 
+/**
+ * A few routes for our application to display different components according
+ * to the path
+ */
 const routes = (
   <Switch>
     <Route

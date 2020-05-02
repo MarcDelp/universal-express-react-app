@@ -17,6 +17,7 @@ What have I done in this part?
 - I also created a simple `index.html` file with basic information to be able to render my React app + I added a favicon
 - I defined a few routes to serve my components
 - I added a script to render my React app
+
 And that's all for my React base app!
 
 Now that's fine, but this could not work without webpack to bundle the files. So, I also create a webpack configuration file, to handle the client build.

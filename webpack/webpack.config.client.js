@@ -3,30 +3,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-module.exports = {
+const webpackBaseConfig = require('./webpack.config.base');
+
+module.exports = Object.assign({}, webpackBaseConfig, {
   entry: path.join(process.cwd(), 'src', 'client', 'index.js'), // the entrypoint of our build
 
   output: { // where to put the bundled file
     path: path.join(process.cwd(), 'dist', 'client'),
     filename: 'bundle.js'
-  },
-
-  module: {
-    rules: [{ // use the babel-loader with 2 presets to transpile the application code
-      test: /src\/.*\.jsx?$/, // only do it for files in the src folder which have a .js or .jsx extension
-      use: [
-        {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-react', '@babel/preset-env']
-          }
-        }
-      ]
-    }]
-  },
-
-  resolve: { // when doing import statement resolve files with .js or .jsx extensions, even if the extension is not explicitly written
-    extensions: ['.js', '.jsx'],
   },
 
   plugins: [
@@ -36,4 +20,4 @@ module.exports = {
       template: `raw-loader!${path.join(process.cwd(), 'src', 'index.ejs')}`
     })
   ]
-};
+});

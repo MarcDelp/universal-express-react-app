@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import 'regenerator-runtime/runtime';
 
 import Home from '../client/components/Home';
 import NotFoundPage from '../client/components/NotFoundPage';

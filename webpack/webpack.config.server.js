@@ -13,9 +13,9 @@ module.exports = {
 
   devtool: 'inline-source-map',
 
-  target: 'node',
+  target: 'node', // the environment in which the server will run
 
-  externals: [nodeExternals()],
+  externals: [nodeExternals()], // to avoid bundling node_modules
 
   module: {
     rules: [{

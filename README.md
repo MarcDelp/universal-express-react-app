@@ -1,5 +1,24 @@
 # universal-express-react-app
 
+## 04/redux
+It's time to expand the potential of our application. To do so, in this branch I add state management by integrating Redux in the app.
+
+To test the code on this branch, make sure you have installed all the dependencies and run :
+```
+npm run dev
+```
+
+Same as before, sorry for Windows users, the script won't run as is. Remove the rm -rf dist.
+
+What's new exactly in this branch?
+
+- I implemented a basic store / action / reducer to interact with our application
+- I configured the store to enable the use of the redux-dev-tools extension in the browser
+- I updated the client & server parts to use the redux environment (store / action)
+- I updated the html template to give an initial redux state to use which will come from the server
+
+What follows in this README is the same as in the master branch.
+
 ## Introduction
 This is a small example of an universal JS app using Express and React in 2020. As such, the app will also run over HTTP2 protocol.
 

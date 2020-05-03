@@ -6,6 +6,9 @@
     <title>Universal JS app demo with Express and React</title>
   </head>
   <body>
-    <div id="main"><%= htmlContent %></div>
+    <div id="main"><%- htmlContent %></div>
+    <script>
+      var __REDUX_STATE__ = <%- state %>;
+    </script>
   </body>
 </html>
